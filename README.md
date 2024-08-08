@@ -1,47 +1,15 @@
-# React Native QRCodeLocalImage (remobile)
+# @flyskywhy/react-native-qrcode-local-image
+
+[![npm version](http://img.shields.io/npm/v/@flyskywhy/react-native-qrcode-local-image.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-qrcode-local-image "View this project on npm")
+[![npm downloads](http://img.shields.io/npm/dm/@flyskywhy/react-native-qrcode-local-image.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-qrcode-local-image "View this project on npm")
+[![npm licence](http://img.shields.io/npm/l/@flyskywhy/react-native-qrcode-local-image.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-qrcode-local-image "View this project on npm")
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-qrcode-local-image "View this project on npm")
+
 A local qrcode image parse for react-native, support for ios and android
 
 ## Installation
 ```sh
-yarn add react-native-qrcode-local-image-jerry
-```
-### Installation (iOS)
-* Drag RCTQRCodeLocalImage.xcodeproj to your project on Xcode.
-* Click on your main project file (the one that represents the .xcodeproj) select Build Phases and drag libRCTQRCodeLocalImage.a from the Products folder inside the RCTQRCodeLocalImage.xcodeproj.
-* Look for Header Search Paths and make sure it contains $(SRCROOT)/../../../react-native/React as recursive.
-
-### Installation (Android)
-```gradle
-...
-include ':react-native-qrcode-local-image'
-project(':react-native-qrcode-local-image').projectDir = new File(settingsDir, '../node_modules/@remobile/react-native-qrcode-local-image/android')
-```
-
-* In `android/app/build.gradle`
-
-```gradle
-...
-dependencies {
-    ...
-    compile project(':react-native-qrcode-local-image')
-}
-```
-
-* register module (in MainApplication.java)
-
-```java
-......
-import com.remobile.qrcodeLocalImage.RCTQRCodeLocalImagePackage;  // <--- import
-
-......
-
-@Override
-protected List<ReactPackage> getPackages() {
-   ......
-   new RCTQRCodeLocalImagePackage()              // <------ add here
-   ......
-}
-
+yarn add @flyskywhy/react-native-qrcode-local-image
 ```
 
 ## Usage
@@ -59,7 +27,7 @@ var {
 } = ReactNative;
 
 var Button = require('@remobile/react-native-simple-button');
-var QRCode = require('@remobile/react-native-qrcode-local-image');
+var QRCode = require('@flyskywhy/react-native-qrcode-local-image');
 
 
 module.exports = React.createClass({

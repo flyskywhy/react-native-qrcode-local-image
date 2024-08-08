@@ -1,11 +1,12 @@
 {
-    "name": "react-native-qrcode-local-image-jerry",
-    "version": "1.0.12",
-    "qrcode-local-imagecription": "A local qrcode image parse for react-native",
+    "name": "@flyskywhy/react-native-qrcode-local-image",
+    "version": "2.0.0",
+    "description": "A local qrcode image parse for react-native",
+    "private": false,
     "main": "index.js",
     "author": {
-        "name": "Jerry",
-        "email": "jerryli720@qq.com"
+        "name": "Li Zheng",
+        "email": "flyskywhy@gmail.com"
     },
     "license": "MIT",
     "keywords": [
@@ -15,15 +16,14 @@
         "android",
         "qrcode",
         "local-image",
-        "remobile",
         "mobile"
     ],
-    "homepage": "https://github.com/452MJ/react-native-qrcode-local-image",
+    "homepage": "https://github.com/flyskywhy/react-native-qrcode-local-image",
     "bugs": {
-        "url": "https://github.com/452MJ/react-native-qrcode-local-image/issues"
+        "url": "https://github.com/flyskywhy/react-native-qrcode-local-image/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/452MJ/react-native-qrcode-local-image.git"
+        "url": "git://github.com/flyskywhy/react-native-qrcode-local-image.git"
     }
 }
