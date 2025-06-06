@@ -28,6 +28,8 @@ public class RCTQRCodeLocalImage extends ReactContextBaseJavaModule {
 
     private Context context;
 
+    private boolean isInverted = false;
+
     public RCTQRCodeLocalImage(ReactApplicationContext reactContext) {
         super(reactContext);
         this.context = context;
@@ -83,7 +85,8 @@ public class RCTQRCodeLocalImage extends ReactContextBaseJavaModule {
         scanBitmap.getPixels(intArray, 0, scanBitmap.getWidth(), 0, 0, scanBitmap.getWidth(), scanBitmap.getHeight());
 
         RGBLuminanceSource source = new RGBLuminanceSource(scanBitmap.getWidth(), scanBitmap.getHeight(), intArray);
-        BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source));
+        isInverted = !isInverted;
+        BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(isInverted ? source.invert() : source));
         QRCodeReader reader = new QRCodeReader();
         try {
             Result result = reader.decode(bitmap, hints);
